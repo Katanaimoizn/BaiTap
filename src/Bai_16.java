@@ -13,7 +13,7 @@ public class Bai_16 {
         return kq;
     }
     public static double theTichMatCau(int r) {
-        double kq = 4 / 3 * r * r * r * Math.PI;
+        double kq = (4  *Math.PI*(r * r * r ))/3;
         return kq;
     }
 
