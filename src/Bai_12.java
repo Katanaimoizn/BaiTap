@@ -1,16 +1,16 @@
 import java.util.Scanner;
 
-public class Bai_11 {
+public class Bai_12 {
     public static Scanner s=new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Nhap x");
         double x = s.nextDouble();
         double saiSo = 0.001;
-        double kq = x;
+        double kq = 1;
         int n = 0;
 
         while (true) {
-            double t = Math.pow(-1, n) * Math.pow(x, 2 * n + 1) / giaithua(2 * n + 1);
+            double t = Math.pow(-1, n) * Math.pow(x, 2 * n ) / giaithua(2 * n );
             kq += t;
 
             if (Math.abs(t) < saiSo) {
